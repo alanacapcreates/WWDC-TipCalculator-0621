@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <h1>Tip Calculator</h1><br/>
+         
+    <div class="container">
+                <div class="results">
+                    
+                    <div>         
+                        <h4 style="margin-top:0;"><span>Total:</span></h4>
+                        <p><strong id="finalTotal" style="font-size:36px;margin:0px;"></strong></p>
+                        <div>         
+                            <h4><span>Tip:</span></h4>
+                            <p><strong id="tip"></strong></p>
+                        </div>
+                    </div>
+                    
+                    <div >         
+                        <h4 style="margin-top:0;"><span>Total / Person:</span></h4>
+                        <p><strong id="totalPerPerson" style="font-size:36px;margin:0px;"></strong></p>
+                        <div class="bottom-results">
+                            <div>         
+                                <h4><span>bill</span></h4>
+                                <p><strong id="billPerPerson"></strong></p>
+                                
+                                <h4><span>tip</span></h4>
+                                <p><strong id="tipPerPerson"></strong></p>
+                            </div>
+                            
+                        </div>  
+                        
+                    </div>
+                </div>
+        
+        <div class="form_control" style="border-top:2px solid black;padding-top:15px;">
+                <label for="bill">Bill Total ($ USD)</label>
+                <input type="number" id="bill_value" placeholder="$$$" min="0"/>
+        </div>
+            
+        <div class="form_control">
+                <label for="tip">Tip (%)</label>
+                <input type="number" id="tip_value" placeholder="%"  min="0" />
+        </div>
+        <div class="form_control">
+                <label for="totalpeople">Splitting the Bill?</label>
+                <input type="number" id="person_count" placeholder="1, 2, 3...?" min="0" />
+        </div>
+        
+        <button onClick="calculate()">Calculate</button>
+    </div>           
+
+
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>
